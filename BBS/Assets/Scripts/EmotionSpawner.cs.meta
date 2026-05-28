@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: f058dcccb9c2bb8489c0551882316b37
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mysteryEmotionPrefab: {fileID: 7311312861953339568, guid: 4c397cfc694273240931e6d956411e7f, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

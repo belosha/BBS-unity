@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public float rotationSpeed = 10f;
@@ -20,10 +20,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Получаем ввод
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        // Направление камеры
+        // Направление камеры (только горизонтальная плоскость)
         Vector3 camForward = cameraTransform.forward;
         Vector3 camRight = cameraTransform.right;
         camForward.y = 0f;
@@ -31,25 +32,25 @@ public class PlayerController : MonoBehaviour
         camForward.Normalize();
         camRight.Normalize();
 
-        // Движение относительно камеры
+        // Вектор движения относительно камеры
         Vector3 moveDirection = (camForward * vertical + camRight * horizontal).normalized;
 
-        // Двигаем персонажа
+        // Применяем скорость
         Vector3 velocity = moveDirection * speed;
         velocity.y = rb.linearVelocity.y;
         rb.linearVelocity = velocity;
 
-        // Поворот персонажа в сторону движения (плавно)
+        // Если есть движение — поворачиваем персонажа в сторону движения (плавно)
         if (moveDirection.magnitude > 0.1f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
 
-        // Анимации (если есть)
+        // Отправляем скорость в аниматор
+        float speedMagnitude = new Vector3(horizontal, 0, vertical).magnitude;
         if (animator != null)
         {
-            float speedMagnitude = new Vector3(horizontal, 0, vertical).magnitude;
             animator.SetFloat("Speed", speedMagnitude);
         }
     }

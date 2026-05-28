@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 078805078de8dc44e8899e8cca7e950b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - emotionParticles: {fileID: 3217399081846325304, guid: c4ed7b529bf42694bbf8a3f07509fc61, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: a09ed63f1948c8a4f91e099a1bd12fed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - mysteryVisual: {fileID: 7311312861953339568, guid: 4c397cfc694273240931e6d956411e7f, type: 3}
+  - successVisual: {fileID: 18517672384999488, guid: 799ba57b848f37248b6316229f7612bd, type: 3}
+  - mysteryParticles: {instanceID: 0}
+  - successParticles: {instanceID: 0}
+  - interactionPrompt: {fileID: 2331942629750838537, guid: 20c57d7f293969545ac2b869d35db4b6, type: 3}
+  - skillCheckCanvas: {fileID: 6465944673191754906, guid: b9acdddb028efa847a60443ade5bdda8, type: 3}
+  - radialProgress: {fileID: 2903599009288441721, guid: 584d7e5526a248c4c86012c23923202b, type: 3}
+  - successZoneImage: {fileID: 1933570064720614822, guid: c45f73f76311eac488aa6ff6cb5f5d27, type: 3}
+  - sliderMarker: {fileID: 8592692348246122814, guid: aee39d035665ccb419a6fa73549c26bc, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
