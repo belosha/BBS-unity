@@ -1436,6 +1436,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8822423420481265056, guid: b9acdddb028efa847a60443ade5bdda8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8822423420481265056, guid: b9acdddb028efa847a60443ade5bdda8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8822423420481265056, guid: b9acdddb028efa847a60443ade5bdda8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8822423420481265056, guid: b9acdddb028efa847a60443ade5bdda8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1566,7 +1578,7 @@ Transform:
   m_GameObject: {fileID: 1717430549559034133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.452, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1634,8 +1646,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3381934, y: 3.2065768, z: 1}
-  m_Center: {x: -0.01777637, y: 2.2155063, z: 0}
+  m_Size: {x: 1.3381934, y: 3.0506186, z: 1}
+  m_Center: {x: -0.01777637, y: 2.2934854, z: 0}
 --- !u!95 &2062183883044985780
 Animator:
   serializedVersion: 7
@@ -1668,7 +1680,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4723671869250922934}
   - component: {fileID: 8505369791317942924}
-  - component: {fileID: 8505369791317942925}
   m_Layer: 0
   m_Name: belo
   m_TagString: Player
@@ -2449,33 +2460,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00014535896, y: 0.0136298165, z: -0.005344974}
     m_Extent: {x: 0.014014777, y: 0.019052513, z: 0.011819672}
   m_DirtyAABB: 0
---- !u!54 &8505369791317942925
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2400225798977335704}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &8655850858839699295
 PrefabInstance:
   m_ObjectHideFlags: 0

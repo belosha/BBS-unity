@@ -114,7 +114,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &1745713142656749934
 ParticleSystem:
@@ -4931,7 +4931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078805078de8dc44e8899e8cca7e950b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EmotionCollect
-  emotionParticles: {fileID: 0}
+  speed: 5
+  rotationSpeed: 10
 --- !u!114 &2666614025220858739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4944,13 +4945,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a09ed63f1948c8a4f91e099a1bd12fed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MysteryEmotion
-  mysteryVisual: {fileID: 7311312861953339568}
   successVisual: {fileID: 18517672384999488, guid: 799ba57b848f37248b6316229f7612bd, type: 3}
-  mysteryParticles: {fileID: 0}
-  successParticles: {fileID: 0}
   interactionPrompt: {fileID: 2331942629750838537, guid: 20c57d7f293969545ac2b869d35db4b6, type: 3}
   skillCheckCanvas: {fileID: 6465944673191754906, guid: b9acdddb028efa847a60443ade5bdda8, type: 3}
-  radialProgress: {fileID: 2903599009288441721, guid: 584d7e5526a248c4c86012c23923202b, type: 3}
+  circleImage: {fileID: 4128086280495407407, guid: 584d7e5526a248c4c86012c23923202b, type: 3}
   successZoneImage: {fileID: 1933570064720614822, guid: c45f73f76311eac488aa6ff6cb5f5d27, type: 3}
   sliderMarker: {fileID: 8592692348246122814, guid: aee39d035665ccb419a6fa73549c26bc, type: 3}
+  interactionRadius: 3
   skillCheckDuration: 2
+  successZoneSize: 0.2
+  uiScale: 0.5
